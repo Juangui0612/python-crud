@@ -25,7 +25,14 @@ SECRET_KEY = 'django-insecure-!v^2x6&(u(-_g(@!reu2wz5bw@gmkh(bptqlug*#%erwt)(=*y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS - MUY IMPORTANTE
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.seenode.com',  # Permite todos los subdominios de Seenode
+    '.onrender.com',  # Si también usas Render
+    'web-go3a2xfudsks.up-de-fra1-k8s-1.apps.run-on-seenode.com',
+]
 
 
 # Application definition
